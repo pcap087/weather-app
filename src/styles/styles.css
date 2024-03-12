@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.container-w1 {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*   
+h1 {
+    font-size: 32px;
+} */
+
+.rounded-cs {
+    border-radius: 15px;
+}
+
+.shadow-cs {
+    box-shadow: 0.1em 0.1em 0.9em rgba(0, 0, 0, 0.1);
+}
+  
+form {
+    display: flex;
+    margin-bottom: 15px;
+}
+  
+input[type="text"] {
+    width: 500px;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+	outline: none;
+}
+  
+button {
+    padding: 5px 18px;
+    margin-left: 3px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+
+p {
+    margin-bottom: 1px;
+    font-size: 12px;
+}
+
+.mte-4 {
+    margin-top: 3.3rem!important;
+}
+ 
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+  
+  /* Estilos para móviles */
+@media (max-width: 600px) {
+    /* h1 {
+        font-size: 20px;
+    } */
+  
+    input[type="text"] {
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  
+    /* h2 {
+      font-size: 18px;
+    } */
+  
+    p {
+      font-size: 14px;
+    }
+  
+    img {
+      width: 90px;
+      height: 90px;
+    }
+}
+  
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+ }
+
+.fadeIn {
+    animation-name: fadeIn;
+}
