@@ -36,20 +36,22 @@ export const UseFunction = (clima) => {
     // ----- img weather ----- 
     const weather = clima.weather[0].main;
     const img = {
-        'Clear': "src/images/clear.png",
-        'Clouds': "src/images/clouds.png",
-        'Smoke': "src/images/clouds.png",
-        'Drizzle': "src/images/drizzle.png",
-        'Humidity': "src/images/humidity.png",
-        'Mist': "src/images/mist.png",
-        'Rain': "src/images/rain.png",
-        'Search': "src/images/search.png",
-        'Snow': "src/images/snow.png",
-        'Wind': "src/images/wind.png",
-        'Thunderstorm': "src/images/storm.png"
+        'Clear': "images/clear.png",
+        'Clouds': "images/clouds.png",
+        'Smoke': "images/clouds.png",
+        'Drizzle': "images/drizzle.png",
+        'Humidity': "images/humidity.png",
+        'Mist': "images/mist.png",
+        'Rain': "images/rain.png",
+        'Search': "images/search.png",
+        'Snow': "images/snow.png",
+        'Wind': "images/wind.png",
+        'Thunderstorm': "images/storm.png"
     }
     const resultImg = img[weather];
     // ------ end img weather ------ 
+
+    //"src/images/wind.png",
 
     return { weekday, day, month, year, lastTimeUpdate, hoursSunrise, hoursSunset, resultImg }
 
